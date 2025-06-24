@@ -1,0 +1,136 @@
+/* General Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fff6f0;
+    color: #333;
+}
+
+/* Flex wrapper to push footer down */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #ff5a3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1s ease-in-out;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.brand-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffddc5;
+}
+
+/* Main section with background image */
+main {
+    background-color: #f0f0f0;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 4rem 2rem;
+    flex: 1; /* Ensures footer sticks to bottom */
+    animation: fadeIn 1.5s ease;
+}
+
+main img {
+    height: 100px;
+    margin-bottom: 1.5rem;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.05);
+}
+
+main p {
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 60%;
+    max-width: 500px;
+    padding: 0.8rem 1rem;
+    border: 2px solid #ffae88;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff5a3c;
+    box-shadow: 0 0 10px #ffc5b0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
