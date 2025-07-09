@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #3a3a3a;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  background-color: #909090;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: #2e2e2e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h2 {
+  margin-bottom: 25px;
+  color: #2e2e2e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.signup-container input,
+.signup-container select {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.signup-container input::placeholder {
+  color: #888;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  background: #ff6f61; /* You can change this to gold or green if needed */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-container button:hover {
+  background: #e85c4a;
+}
+
+.signup-container a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+.signup-container a:hover {
+  text-decoration: underline;
+}

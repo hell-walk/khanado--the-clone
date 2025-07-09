@@ -1,0 +1,72 @@
+body {
+   padding: 0;
+  background: #3a3a3a;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+     padding: 40px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  background-color: #909090;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: #2e2e2e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #2e2e2e;
+}
+
+.login-container input {
+   display: block;
+  width: 100%;
+  padding: 11px 0px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #ff6f61; /* You can change this to gold or green if needed */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background: #e85c4a;
+}
+
+.login-container a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+   text-decoration: underline;
+}
+.login-container img {
+  height: 100px;
+}
